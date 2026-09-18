@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Sample lead-pipeline script for Google Sheets — demonstration only.
+Sample lead-pipeline script for Google Sheets (demonstration only).
 
 Takes new leads from sample_leads.csv, removes duplicates (by email),
 assigns a pipeline stage, and upserts them into a Google Sheet.
@@ -65,7 +65,7 @@ def dry_run(leads):
     for row in to_rows(unique):
         print(f"{row[0]:<18}{row[1]:<30}{row[2]:<14}{row[3]:<10}")
     print()
-    print("Dry run — nothing was written. Drop --dry-run to write to Google Sheets.")
+    print("Dry run, so nothing was written. Drop --dry-run to write to Google Sheets.")
 
 
 def write_sheet(leads):
